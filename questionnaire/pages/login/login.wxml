@@ -1,0 +1,16 @@
+<view class='container'>
+    <view class='logo'>
+       <open-data class='img' type='userAvatarUrl'></open-data>
+    </view>
+    <view class='info-box'>
+      <view class='info flex-wrap'>
+        <image class='img' src='/image/user.jpg'></image>
+        <input placeholder-class='placeholder' placeholder='请输入身份证号'   bindinput='setCardNo' value='{{cardNo}}'></input>
+      </view>
+      <view class='code flex-wrap'>
+       <image class='img' src='/image/password.jpg'></image>
+        <input placeholder-class='placeholder' placeholder='请输入密码'  bindinput='securityCode' type='password' value='{{password}}'></input>
+      </view>
+    </view>
+    <button class='login' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo='loginUser' >登  录</button>
+  </view>

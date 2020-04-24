@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="header-box flex-wrap padding-box" bindtap="handleLogin">
+      <block wx:if="{{accessToken==''}}">
+         <view class="header">
+          <open-data class="img"  type='userAvatarUrl'></open-data>
+        </view>
+        <view class="content">
+            <view>请您登录</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="header">
+          <image class="img"src="{{avatar}}"></image>
+        </view>
+        <view class="content">
+            <view>{{nickname}}</view>
+            <view class="phone">{{cardNo}}</view>
+        </view>
+      </block>
+      <image class='more-img' src="/image/icon-more.png"></image>
+    </view>
+    <view class="item-box flex-wrap padding-box" bindtap="untyingUser">
+        <image class="icon-img" src="/image/icon-setting.png"></image>
+        <view class="content">设置</view>
+         <image class='more-img' src="/image/icon-more.png"></image>
+    </view>
+</view>

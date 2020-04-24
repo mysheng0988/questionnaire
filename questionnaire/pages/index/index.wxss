@@ -1,0 +1,57 @@
+page{
+ background: #f1f1f1;
+}
+.container{
+  padding: 18rpx 30rpx;
+}
+.label{
+  padding:  10rpx 20rpx;
+  width: 100%;
+  border-left: 4rpx solid #1296DB;
+  color:#333;
+  font-weight: bold;
+  font-size: 32rpx;
+  border-bottom: 1px solid #eee;
+  margin: 20rpx 0;
+}
+.item-box{
+  padding: 0 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 690rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  border-radius: 15rpx;
+}
+.item-box .title{
+   flex: 1;
+   color: #666;
+   font-size: 28rpx;
+}
+.item-box .img{
+   width: 16rpx;
+   height: 28rpx;
+   overflow: hidden;
+   vertical-align: middle;
+}
+.submit{
+  height: 80rpx;
+  width: 420rpx;
+  position: fixed;
+  left: 50%;
+  margin: 0 -210rpx;
+  bottom:100rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+   color: #fff;
+  background:#1296DB
+}
+.select-img{
+  margin: 0 10px;
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  overflow: hidden;
+}
+

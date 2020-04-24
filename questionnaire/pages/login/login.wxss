@@ -1,0 +1,62 @@
+.container{
+  width: 100%;
+  
+}
+.logo{
+  width: 100%;
+  height: 200rpx;
+  position: relative;
+  margin: 148rpx 0 80rpx 0;
+}
+.logo .img{
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+  overflow: hidden;
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  border-radius: 50%;
+  margin: 0 -70rpx;
+}
+.info-box{
+  width: 479rpx;
+  margin: 10rpx auto;
+  text-align: center;
+}
+.info,.code{
+  height: 70rpx;
+  margin: 40rpx 10rpx;
+  align-items: center;
+}
+.info-box .img{
+  margin-right: 20rpx;
+   width: 48rpx;
+   height: 48rpx;
+   overflow: hidden;
+   vertical-align: middle;
+}
+.info-box input{
+  width: 100%;
+  height: 70rpx;
+   text-align: left;
+  line-height: 70rpx;
+  border-bottom: 1px #ACACAC solid;
+}
+.code button{
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 20rpx;
+  border: 1px #60B157 solid;
+}
+.login{
+  height: 80rpx;
+  width: 479rpx;
+  margin: 20rpx auto;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+   color: #fff;
+   background: #1296DB;
+}
