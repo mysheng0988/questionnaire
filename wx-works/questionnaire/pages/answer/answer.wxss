@@ -1,0 +1,55 @@
+page{
+ background: #fff;
+}
+.container{
+  padding: 18rpx 30rpx;
+}
+.answer-box{
+    width: 100%;
+  }
+  .answer-box span{
+    margin: 0 20px;
+  }
+  .title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .explain{
+    font-size: 14px;
+    color: #666;
+    line-height: 35px;
+    text-indent: 2em;
+  }
+  .question{
+    line-height: 45px;
+  }
+  .question label{
+    line-height: 40px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  .remark{width: 60%}
+  .btn-box{
+    width: 100%;
+    text-align: center;
+    padding: 0 30rpx;
+    margin: 20px 0;
+  }
+  .symptom{
+    line-height: 45px;
+  }
+  .el-checkbox{
+    margin-right: 5px;
+  }
+  .btn-box button{
+      margin: 10rpx 20px;
+      width: 120px;
+      height: 80rpx;
+      color: #1296DB;
+      line-height: 80rpx;
+      border:1px solid #1296DB;
+  }
+ 

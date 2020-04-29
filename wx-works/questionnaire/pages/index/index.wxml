@@ -1,0 +1,37 @@
+<view class='container'>
+  <view class='label'>{{title}}</view>
+  <view wx:for="{{checkList}}" wx:key='index'>
+    <view class='item-box flex-wrap' bindtap="answerProblem" data-id='{{item.id}}' >
+     <image class="select-img" src="/image/{{item.complete?'icon-select.png':'icon-unselect.png'}}" ></image>
+      <view class='title'>{{item.name}} </view>
+      <image class='img' src="/image/icon-more.png"></image>
+    </view>
+  </view>
+
+  <button class='submit' bindtap="changeScale" wx:if="{{completeQuestionnaire&&examinationStatus =='20'}}">下一步量表</button>
+
+ <view>{{paramArr}}</view>
+ <button bindtap="openPopup">弹窗</button>
+
+</view>
+
+
+<view class="modals-box" hidden='{{isModals}}'>
+    <view class="modals-cancel" bindtap="hideModal"></view>
+    <view class="dialog-body flex-column" >
+       <view class='title'>联系测评师选择量表</view>
+         <input class="weui-input"  bindinput="setUserName" value="{{username}}" placeholder-class="placeholder" placeholder="请输入测评师账户" />
+         <input class="weui-input" type="password"  bindinput="setPassword" value="{{password}}" placeholder-class="placeholder"  placeholder="请输入测评师密码" />
+       <view class='c-btn-box flex-wrap'> 
+          <view class='c-cancel' bindtap="hideModal">取消</view>
+          <view class="c-submit" bindtap='userConfirm'>选择量表</view>
+       </view>
+    </view>
+</view>
+<view class="modals-box" wx:if='{{isPopup}}'>
+    <view class="modals-cancel" bindtap="hideModalPopup"></view> 
+    <view class="dialog-body-popup flex-wrap {{isOpen?'open':'close'}}" >
+      <button  class="buttom" bindtap="hideModalPopup">取消</button>
+      <button  class="buttom login" bindtap="handleLogin" >登录</button>
+    </view>
+</view>

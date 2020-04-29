@@ -1,0 +1,48 @@
+
+.header-box{
+  width: 100%;
+  height: 200rpx;
+  background: -webkit-linear-gradient(45deg,  #0294D5 , #0476D9); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(45deg,  #0294D5, #0476D9); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(45deg,  #0294D5, #0476D9); /* Firefox 3.6 - 15 */
+  background: linear-gradient(45deg,#0294D5, #0476D9); 
+  overflow: hidden;
+  line-height: 50rpx;
+  vertical-align: center;
+}
+.header-box .header{
+   width: 100rpx;
+   height: 100rpx;
+   overflow: hidden;
+   border-radius: 50%;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.header-box .content{
+   flex:1;
+   margin: 0 20px;
+   color: #fff;
+}
+.header-box .content .phone{
+  color: #999;
+  font-size: 24rpx;
+}
+.item-box{
+  margin-top: 20rpx;
+  background: #fff;
+  height: 90rpx;
+}
+.item-box .icon-img{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.item-box .content{
+  flex: 1;
+  margin: 0 20rpx;
+}
