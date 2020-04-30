@@ -1,0 +1,100 @@
+page{
+ background: #f1f1f1;
+}
+.container{
+  padding: 18rpx 30rpx;
+}
+.label{
+  padding:  10rpx 20rpx;
+  width: 100%;
+  border-left: 4rpx solid #1296DB;
+  color:#333;
+  font-weight: bold;
+  font-size: 32rpx;
+  border-bottom: 1px solid #eee;
+  margin: 20rpx 0;
+}
+.item-box{
+  padding: 0 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 690rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  border-radius: 15rpx;
+}
+.item-box .title{
+   flex: 1;
+   color: #666;
+   font-size: 28rpx;
+}
+.item-box .img{
+   width: 16rpx;
+   height: 28rpx;
+   overflow: hidden;
+   vertical-align: middle;
+}
+.submit{
+  height: 80rpx;
+  width: 420rpx;
+  position: fixed;
+  left: 50%;
+  margin: 0 -210rpx;
+  bottom:100rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+   color: #fff;
+  background:#1296DB
+}
+.select-img{
+  margin: 0 10px;
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.dialog-body-popup{
+  position: fixed;
+  left: 0;
+  bottom: -200rpx;
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  box-shadow: 1px -1px 1px #ccc;
+
+}
+.dialog-body-popup .buttom{
+  flex: 1;
+  margin: 0 50rpx;
+}
+.dialog-body-popup .buttom.login{
+  background: #BCE216;
+  color: #fff;
+}
+.open {
+  animation: slideContentUp 0.5s ease-in both;
+}
+.close {
+  animation: slideContentDown 0.5s ease-in both;
+}
+
+@keyframes slideContentUp {
+  from {
+    bottom: -200rpx;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slideContentDown {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: -200rpx;
+  }
+}

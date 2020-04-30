@@ -1,0 +1,287 @@
+/**app.wxss**/
+page {
+  background: #f4f4f4;
+  font-size: 28rpx;
+  color: #333;
+}
+view, scroll-view, swiper, button, input, label, image{
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+.more-img{
+  width: 16rpx;
+  height: 28rpx;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.margin-top {
+  margin-top: 18rpx;
+}
+
+.flex-column {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-center{
+  display: flex;
+  display: -webkit-flex;
+   align-items: center;
+}
+.flex-wrap {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: wrap;
+}
+
+.align-self {
+  align-self: flex-end;
+}
+
+.padding-box {
+  padding: 18rpx 30rpx;
+}
+.padding {
+  padding: 15rpx 10rpx;
+}
+.padding-bottom {
+  padding-bottom: 50rpx;
+}
+
+.padding-right {
+  padding-right: 30rpx;
+}
+
+.padding-left-right {
+  padding: 0 30rpx;
+}
+
+.padding-top-down {
+  padding: 18rpx 0;
+}
+
+.padding-left {
+  padding-left: 30rpx;
+}
+
+.margin-left {
+  margin-left: 30rpx;
+}
+
+.padding-top {
+  padding-top: 18rpx;
+}
+
+.padding-top-left {
+  padding: 18rpx 30rpx 0 30rpx;
+}
+/*标展示 */
+.img-icon {
+  width: 140rpx;
+  height: 140rpx;
+  vertical-align: middle;
+}
+
+/* insearch */
+
+.font-18 {
+  font-size: 18rpx;
+}
+
+.font-26 {
+  font-size: 26rpx;
+}
+
+.font-28 {
+  font-size: 28rpx;
+}
+
+.font-24 {
+  font-size: 24rpx;
+}
+
+.font-30 {
+  font-size: 30rpx;
+}
+
+.font-32 {
+  font-size: 32rpx;
+}
+.border-line{
+  height: 1px;
+  width: 750rpx;
+  background:  rgba(0, 0, 0, 0.1);
+}
+.height-60 {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.border-top {
+  width: 690rpx;
+  height: 2rpx;
+  background: #f5f5f5;
+  margin: 0 auto;
+}
+
+.border-top-top {
+  width: 690rpx;
+  height: 2rpx;
+  background: #f5f5f5;
+  margin: 0 auto;
+  margin-top: 18rpx;
+}
+/* 按钮点击效果 */
+.btn-hover{
+  position: relative;
+  top: 3rpx;
+  box-shadow:0px 0px 8px #999 inset; 
+}
+/* 镂空按钮 点击阴影不宜太深 */
+.plain-hover{
+  position: relative;
+  top: 3rpx;
+  box-shadow:0px 0px 10px #bbbec4 inset; 
+}
+
+checkbox .wx-checkbox-input {
+  width: 30rpx;
+  height: 30rpx;
+  border: 4rpx solid #ccc;
+  margin: 0 10rpx;
+  border-radius: 10rpx;
+}
+/*复选框外框选中样式*/
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border-color: #1296DB;
+}
+/*复选框选中后内部样式*/
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #1296DB;
+  border-radius: 10rpx;
+  transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+}
+
+radio .wx-radio-input {
+  width: 30rpx;
+  height: 30rpx;
+  border: 4rpx solid #ddd;
+  border-radius: 100%;
+  background: none;
+  margin: 0 10rpx;
+}
+
+/*单选按钮选中后内部样式*/
+
+radio .wx-radio-input.wx-radio-input-checked {
+  border: 4rpx solid #1296DB!important;
+}
+.placeholder{
+  font-size: 25rpx;
+  color: #999;
+}
+radio .wx-radio-input.wx-radio-input-checked::before {
+
+  background: #1296DB;
+  border-radius: 100%;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* 弹窗 */
+.modals-box{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 111
+}
+.modals-box .hideModal{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  vertical-align: middle;
+}
+.modals-cancel{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6)
+}
+.dialog-body{
+  width:500rpx;
+  height: 420rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 16rpx;
+  background: #fff;
+  box-shadow: 0 60rpx 60rpx rgba(131, 98, 43, 0.1)
+}
+.modals-box .title{
+  padding-top: 50rpx;
+  padding-bottom: 20rpx;
+  color: #333;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.info{
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  color: #666;
+  font-size: 26rpx;
+  border-radius: 48rpx;
+  /* text-indent: 2em; */
+  letter-spacing: 1rpx;
+}
+.weui-input{
+  width: 80%;
+  height: 60rpx;
+  padding: 10rpx;
+  line-height: 60rpx;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+}
+.tip-msg{
+  font-size: 32rpx;
+  color: #eb3c31;
+  text-align: center;
+}
+.c-btn-box{
+  height: 88rpx;
+  line-height: 88rpx;
+  width: 500rpx;
+  border-radius:0 0 16rpx 16rpx;
+  border-top: 1px solid #eee;
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+  font-weight: bold;
+}
+.c-cancel{
+  flex: 1;
+  text-align: center;
+  color: #999999;
+  border-right: 1px solid #E8E8E8;
+}
+.c-submit{
+  flex: 1;
+  text-align: center;
+  color: #1296DB;
+}
