@@ -42,12 +42,15 @@ Page({
       
       this.initData()
     }else{
-      this.setData({
-        isPopup: true,
-        isOpen:true,
-      })
+     
       app.authorize()
     }
+  },
+  showPopup(){
+    this.setData({
+      isPopup: true,
+      isOpen: true,
+    })
   },
   async initData(){
     let patientId = await this.getUsrInfoData();

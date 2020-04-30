@@ -89,6 +89,12 @@ App({
                     code: '618'
                   })
                   break;
+                case 400:
+                  self.brocast({
+                    path: "pages/index/index",
+                    method: "showPopup"
+                  })
+                  break;
                 case 500:
                   self.toast("请求数据失败")
                   reject({

@@ -10,8 +10,8 @@
 
   <button class='submit' bindtap="changeScale" wx:if="{{completeQuestionnaire&&examinationStatus =='20'}}">下一步量表</button>
 
- <view>{{paramArr}}</view>
- <button bindtap="openPopup">弹窗</button>
+ <!-- <view>{{paramArr}}</view>
+ <button bindtap="openPopup">弹窗</button> -->
 
 </view>
 
